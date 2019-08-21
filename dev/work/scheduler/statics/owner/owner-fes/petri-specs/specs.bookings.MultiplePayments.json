@@ -1,0 +1,13 @@
+{
+  "specs.bookings.MultiplePayments": {
+    "owner": "amits@wix.com",
+    "onlyForLoggedInUsers": true,
+    "scopes": [
+      "wix-bookings-client-owner"
+    ],
+    "controlGroup": "false",
+    "variants": [
+      "true"
+    ]
+  }
+}

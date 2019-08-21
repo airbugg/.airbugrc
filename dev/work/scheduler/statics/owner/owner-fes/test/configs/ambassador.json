@@ -1,0 +1,20 @@
+{
+    "AuthorizationServer": "http://10.97.5.90:8084/authorization-server/rpc/services/execute",
+    "BookingsServer": "http://papp-pjvm-1.42.wixprod.net:22654/rpc/services/execute",
+    "BusinessServer": "http://app-jvm-140.42.wixprod.net:21634/rpc/services/execute",
+    "CalendarServer": "http://10.97.138.46:8084/rpc/services/execute",
+    "CheckoutServer": "http://10.97.33.210:8084/rpc/services/execute",
+    "ExternalCalendarServer": "http://app-jvm-61.42.wixprod.net:22514/rpc/services/execute",
+    "GatekeeperServer": "http://app-jvm-26.42.wixprod.net:27324/gatekeeper-server/rpc/services/execute",
+    "MembershipApi": "http://app-jvm-11.42.wixprod.net:31524/rpc/services/execute",
+    "NotificationsServer": "http://10.97.54.15:8084/rpc/services/execute",
+    "PremiumDataViewRetrieverServer": "http://papp-pjvm-59.42.wixprod.net:32754/rpc/services/execute",
+    "PricingPlanBenefitsServer": "http://10.97.4.8:8084/rpc/services/execute",
+    "ResourcesServer": "http://10.97.136.228:8084/rpc/services/execute",
+    "ScheduleServer": "http://10.97.142.117:8084/rpc/services/execute",
+    "ServicesCatalogServer": "http://10.43.133.59:8084/rpc/services/execute",
+    "ServicesServer": "http://app-jvm-26.42.wixprod.net:21904/rpc/services/execute",
+    "WaitingListServer": "http://app-jvm-183.42.wixprod.net:23004/rpc/services/execute",
+    "WixContactsWebapp": "http://10.97.248.145:8084/wix-contacts-webapp/rpc/services/execute",
+    "WixMetaSiteManagerWebapp": "http://10.43.12.204:8084/meta-site-manager/rpc/services/execute"
+}

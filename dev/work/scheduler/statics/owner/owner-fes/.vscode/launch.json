@@ -1,0 +1,93 @@
+{
+  "version": "0.2.0",
+  "configurations": [{
+    "name": "All Component Tests - Jest",
+    "type": "node",
+    "request": "launch",
+    "program": "${workspaceRoot}/node_modules/jest/bin/jest",
+    "args": [
+      "--runInBand"
+    ],
+    "cwd": "${workspaceRoot}",
+    "env": {
+      "MATCH_ENV": "component"
+    }
+  },
+  {
+    "name": "Current Component Tests - Jest",
+    "type": "node",
+    "request": "launch",
+    "program": "${workspaceRoot}/node_modules/jest/bin/jest",
+    "args": [
+      "${relativeFile}"
+    ],
+    "cwd": "${workspaceRoot}",
+    "env": {
+      "MATCH_ENV": "component"
+    }
+  },
+  {
+    "name": "All E2E Tests - Jest",
+    "type": "node",
+    "request": "launch",
+    "program": "${workspaceRoot}/node_modules/jest/bin/jest",
+    "args": [
+      "--runInBand"
+    ],
+    "cwd": "${workspaceRoot}",
+    "env": {
+      "MATCH_ENV": "e2e"
+    }
+  },
+  {
+    "name": "Current E2E Tests - Jest",
+    "type": "node",
+    "request": "launch",
+    "program": "${workspaceRoot}/node_modules/jest/bin/jest",
+    "args": [
+      "${relativeFile}"
+    ],
+    "cwd": "${workspaceRoot}",
+    "env": {
+      "MATCH_ENV": "e2e"
+    }
+  },
+  {
+    "name": "All Server Tests - Jest",
+    "type": "node",
+    "request": "launch",
+    "program": "${workspaceRoot}/node_modules/jest/bin/jest",
+    "args": [
+      "--runInBand"
+    ],
+    "cwd": "${workspaceRoot}",
+    "env": {
+      "MATCH_ENV": "server"
+    }
+  },
+  {
+    "name": "Current Server Tests - Jest",
+    "type": "node",
+    "request": "launch",
+    "program": "${workspaceRoot}/node_modules/jest/bin/jest",
+    "args": [
+      "${relativeFile}"
+    ],
+    "cwd": "${workspaceRoot}",
+    "env": {
+      "MATCH_ENV": "server"
+    }
+  },{
+    "name": "Current Server",
+    "type": "node",
+    "request": "launch",
+    "program": "${workspaceRoot}/develop",
+    "args": [
+      "${relativeFile}"
+    ],
+    "cwd": "${workspaceRoot}",
+    "env": {
+      "MATCH_ENV": "server"
+    }
+  }]
+}

@@ -1,0 +1,175 @@
+{
+  "name": "@wix/owner-fes",
+  "version": "1.0.0",
+  "license": "UNLICENSED",
+  "private": true,
+  "author": {
+    "name": "Einav Carmon",
+    "email": "einavc@wix.com"
+  },
+  "scripts": {
+    "start": "yoshi start --entry-point=index-dev.js",
+    "precommit": "lint-staged",
+    "pretest": "npx yoshi build",
+    "test": "npx yoshi lint --fix & npx yoshi test --jest --runInBand",
+    "posttest": "yoshi lint",
+    "release": "yoshi release"
+  },
+  "dependencies": {
+    "@types/react-dom": "^16.8.4",
+    "@wix/ambassador": "^3.0.66",
+    "@wix/ambassador-authorization-server": "latest",
+    "@wix/ambassador-bookings-server": "latest",
+    "@wix/ambassador-business-server": "latest",
+    "@wix/ambassador-calendar-server": "latest",
+    "@wix/ambassador-checkout-server": "latest",
+    "@wix/ambassador-external-calendar-server": "latest",
+    "@wix/ambassador-gatekeeper-server": "latest",
+    "@wix/ambassador-notifications-server": "latest",
+    "@wix/ambassador-premium-data-view-retriever-server": "latest",
+    "@wix/ambassador-pricing-plan-benefits-server": "latest",
+    "@wix/ambassador-resources-server": "latest",
+    "@wix/ambassador-schedule-server": "latest",
+    "@wix/ambassador-services-catalog-server": "latest",
+    "@wix/ambassador-services-server": "latest",
+    "@wix/ambassador-wix-contacts-webapp": "latest",
+    "@wix/ambassador-wix-meta-site-manager-webapp": "latest",
+    "@wix/bookings-owner-fes-domain": "latest",
+    "@wix/bookings-platform-adapter": "latest",
+    "@wix/wix-authorization": "latest",
+    "@wix/wix-axios-config": "^1.3.54",
+    "@wix/wix-bootstrap-api-gw-client": "latest",
+    "@wix/wix-bootstrap-gatekeeper": "latest",
+    "@wix/wix-bootstrap-greynode": "latest",
+    "@wix/wix-bootstrap-hadron": "latest",
+    "@wix/wix-bootstrap-ng": "latest",
+    "@wix/wix-bootstrap-renderer": "latest",
+    "@wix/wix-express-csrf": "latest",
+    "@wix/wix-express-require-https": "latest",
+    "@wix/wix-instance": "latest",
+    "@wix/wnp-api-gw-common": "latest",
+    "axios": "~0.16.0",
+    "bootstrap-hot-loader": "4.10.2",
+    "btoa": "^1.2.1",
+    "express": "~4.15.0",
+    "i18n": "^0.8.3",
+    "jest": "^24.9.0",
+    "moment": "^2.23.0",
+    "moment-timezone": "^0.5.26",
+    "react": "^16.9.0",
+    "react-dom": "^16.9.0",
+    "source-map-support": "^0.5.13",
+    "velocityjs": "^1.1.3"
+  },
+  "devDependencies": {
+    "@types/express": "~4.0.0",
+    "@types/jest": "^24.0.17",
+    "@types/node": "^10.14.15",
+    "@wix/ambassador-testkit": "^3.0.34",
+    "@wix/rpc-pathfinder": "^1.0.54",
+    "@wix/wix-api-gw-full-testkit": "latest",
+    "@wix/wix-api-gw-testkit": "latest",
+    "@wix/wix-bootstrap-testkit": "latest",
+    "@wix/wix-config-emitter": "latest",
+    "@wix/wix-gatekeeper-testkit": "latest",
+    "@wix/wix-http-headers": "latest",
+    "@wix/wix-petri-testkit": "latest",
+    "@wix/wix-rpc-testkit": "latest",
+    "babel-preset-jest": "^24.6.0",
+    "chance": "^1.0.18",
+    "husky": "~0.14.0",
+    "jest-cli": "^24.9.0",
+    "jest-yoshi-preset": "^4.11.1",
+    "lint-staged": "^7.2.2",
+    "moment": "^2.23.0",
+    "node-sass": "^4.12.0",
+    "puppeteer": "^1.18.1",
+    "typescript": "~3.0.1",
+    "yoshi": "^4.11.1"
+  },
+  "yoshi": {
+    "projectType": "app",
+    "externals": {
+      "react": "React",
+      "react-dom": "ReactDOM",
+      "@wix/fedops-logger": "fedopsLogger"
+    },
+    "hmr": "auto"
+  },
+  "lint-staged": {
+    "linters": {
+      "*.{js,ts}": "yoshi lint"
+    },
+    "ignore": [
+      "**/*.d.ts"
+    ]
+  },
+  "jest": {
+    "preset": "jest-yoshi-preset"
+  },
+  "ambassador": {
+    "buildersOutDir": "test/builders/rpc",
+    "artifacts": [
+      {
+        "artifactName": "business-server",
+        "artifactId": "com.wixpress.bookings.business-server"
+      },
+      {
+        "artifactName": "authorization-server",
+        "artifactId": "com.wixpress.authorization-server"
+      },
+      {
+        "artifactName": "wix-meta-site-manager-webapp",
+        "artifactId": "com.wixpress.wix-meta-site-manager-webapp"
+      },
+      {
+        "artifactName": "services-catalog-server",
+        "artifactId": "com.wixpress.bookings.services-catalog-server"
+      },
+      {
+        "artifactName": "bookings-server",
+        "artifactId": "com.wixpress.bookings.bookings-server"
+      },
+      {
+        "artifactId": "com.wixpress.bookings.calendar-server",
+        "artifactName": "calendar-server"
+      },
+      {
+        "artifactName": "notifications-server",
+        "artifactId": "com.wixpress.bookings.notifications-server"
+      },
+      {
+        "artifactName": "schedule-server",
+        "artifactId": "com.wixpress.bookings.schedule-server"
+      },
+      {
+        "artifactName": "pricing-plan-benefits-server",
+        "artifactId": "com.wixpress.boost.pricing-plan-benefits-server"
+      },
+      {
+        "artifactName": "checkout-server",
+        "artifactId": "com.wixpress.bookings.checkout-server"
+      },
+      {
+        "artifactName": "wix-contacts-webapp",
+        "artifactId": "com.wixpress.wix-contacts-webapp"
+      },
+      {
+        "artifactName": "resources-server",
+        "artifactId": "com.wixpress.bookings.resources-server"
+      },
+      {
+        "artifactId": "com.wixpress.bookings.services-server",
+        "artifactName": "services-server"
+      },
+      {
+        "artifactName": "external-calendar-server",
+        "artifactId": "com.wixpress.bookings.external-calendar-server"
+      },
+      {
+        "artifactName": "premium-data-view-retriever-server",
+        "artifactId": "com.wixpress.premium.premium-data-view-retriever-server"
+      }
+    ]
+  }
+}

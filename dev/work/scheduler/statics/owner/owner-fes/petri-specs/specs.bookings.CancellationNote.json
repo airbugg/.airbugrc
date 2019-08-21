@@ -1,0 +1,13 @@
+{
+  "specs.bookings.CancellationNote": {
+    "owner": "alexandras@wix.com",
+    "onlyForLoggedInUsers": true,
+    "scopes": [
+      "wix-bookings-client-owner"
+    ],
+    "controlGroup": "false",
+    "variants": [
+      "true"
+    ]
+  }
+}

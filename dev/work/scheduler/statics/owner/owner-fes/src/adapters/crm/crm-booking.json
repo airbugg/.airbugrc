@@ -1,0 +1,29 @@
+{
+  "bookings": [
+    {
+      "id": "6b046d5b-4a6e-4051-85fb-d1cd5a2dc87f",
+      "start": 1558508400000,
+      "end": 1558512000000,
+      "staff": "Staff Member #1",
+      "offering": {
+        "title": "Iyengar",
+        "type": "GROUP",
+        "price": {
+          "amount": 30.00,
+          "currency": "USD"
+        }
+      },
+      "payments": {
+        "onlinePayments": [],
+        "offlinePayments": []
+      },
+      "bookingNote": null,
+      "pricingPlanName": null,
+      "bookedAs": null,
+      "coupon": {
+        "name": "REMOVE",
+        "amountAfterDiscount": 20.0
+      }
+    }
+  ]
+}

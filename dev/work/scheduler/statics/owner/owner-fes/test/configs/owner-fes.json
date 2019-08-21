@@ -1,0 +1,12 @@
+{
+  "clientTopology": {
+    "staticsDomain": "static.parastorage.com"
+  },
+  "notification": {
+    "localPath": "./src/"
+  },
+  "petriScopes": [],
+  "appTopology": {
+      "staticsUrl": "https://localhost:3200/"
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "clientTopology": {
+    "staticsDomain": "<%= scripts_domain %>"
+  },
+  "notification": {
+    "localPath": "<%= local_files_path ('com.wixpress.bookings-adapter-mail-templates') %>"
+  },
+  "petriScopes": [],
+  "appTopology": {
+    "staticsUrl": "<%= static_url('com.wixpress.boost.scheduler-owner-statics') %>",
+    "staticsDomain": "<%= scripts_domain %>",
+    "ownerLocalPath": "<%= local_files_path ('com.wixpress.boost.scheduler-owner-statics') %>"
+  },
+  "services": {
+    "gatekeeper": "<%= rpc_service_url('com.wixpress.authorization.gatekeeper.gatekeeper-server') %>"
+  }
+}
