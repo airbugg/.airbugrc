@@ -48,7 +48,7 @@
     "@wix/wix-express-require-https": "latest",
     "@wix/wix-instance": "latest",
     "@wix/wnp-api-gw-common": "latest",
-    "axios": "~0.16.0",
+    "axios": "~0.19.0",
     "bootstrap-hot-loader": "4.10.2",
     "btoa": "^1.2.1",
     "express": "~4.15.0",
