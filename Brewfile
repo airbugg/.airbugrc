@@ -8,12 +8,8 @@ tap "homebrew/cask-fonts"
 # Utilities
 brew "fzf"
 brew "git"
-brew "mackup"
 brew "thefuck"
 brew "yarn", args: ["without-node"]
-brew "zsh"
-brew "antigen"
-brew "qt"
 
 # Apps
 cask "google-chrome"
@@ -25,7 +21,6 @@ cask "google-backup-and-sync"
 cask "1password"
 cask "cloudapp"
 cask "fantastical"
-cask "alfred"
 cask "keyboard-maestro"
 cask "the-unarchiver"
 cask "whatsapp"
